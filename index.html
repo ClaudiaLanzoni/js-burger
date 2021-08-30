@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link importazione bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>JS Burger</title>
+</head>
+<body>
+    <!--Il programma dovrà consentire di calcolare il prezzo del panino selezionando o deselezionando
+gli ingredienti proposti.
+Consigli del giorno:
+Create inizialmente un html base con gli elementi minimi necessari al funzionamento, passate poi alla parte JS ragionando come sempre a step.
+Prima la logica in italiano e poi traduciamo in codice.
+ console.log() è nostro amico!!!!.
+Quando tutto funziona passate alla parte visiva lavorando al css.-->
+
+    <h1 id="nome-panino"></h1> <!--Il nome del panino-->
+
+    <h2>Ingredienti</h2>    
+
+    <!--Ciascun div ha un checkbox-->
+
+    <div >Formaggio<input class="ingrediente" type="checkbox"  name="formaggio" id="" value="formaggio"></div>
+
+    <div>Pomodoro<input class="ingrediente" type="checkbox" name="pomodoro" id="" value="pomodoro"></div> 
+
+    <div>Uovo<input class="ingrediente" type="checkbox" name="uovo" id="" value="uovo"></div>
+
+    <div>Lattuga<input class="ingrediente" type="checkbox" name="lattuga" id="" value="lattuga"></div>
+
+    <div>Mostarda<input class="ingrediente" type="checkbox" name="mostarda" id="" value="mostarda"></div> 
+
+    <div>Ketchup<input class="ingrediente" type="checkbox" name="ketchup" id="" value="ketchup"></div>
+
+
+    <!--DISCOUNT SECTION-->
+
+    <div>Discount <input type="text"></div> <!--Discount variabile-->
+
+    <button id="bottone-calcolatore">Calcolatore</button>  <!--Bottone che calcola il prezzo del panino tenendo conto degli ingredienti checkati e del discount eventuale-->
+
+    <script type="text/javascript" src="javascript/myscript.js"></script>
+</body>
+</html>

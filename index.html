@@ -21,17 +21,17 @@ Prima la logica in italiano e poi traduciamo in codice.
  console.log() è nostro amico!!!!.
 Quando tutto funziona passate alla parte visiva lavorando al css.-->
 
-    <h1 id="nome-panino"></h1> <!--Il nome del panino-->
+    <h1><input type="text" id="nome-panino" placeholder="Name your burger"></h1> <!--Il nome del panino-->
 
     <h2>Ingredienti</h2>    
 
     <!--Ciascun div ha un checkbox-->
 
-    <div >Formaggio<input class="ingrediente" type="checkbox"  name="formaggio" id="" value="formaggio"></div>
+    <div>Formaggio<input class="ingrediente" type="checkbox"  name="formaggio" id="" value="formaggio"></div>
 
-    <div>Pomodoro<input class="ingrediente" type="checkbox" name="pomodoro" id="" value="pomodoro"></div> 
+    <div>Pomodoro<input class="ingrediente offerta" type="checkbox" name="pomodoro" id="" value="pomodoro"></div> 
 
-    <div>Uovo<input class="ingrediente" type="checkbox" name="uovo" id="" value="uovo"></div>
+    <div>Uovo<input class="ingrediente offerta" type="checkbox" name="uovo" id="" value="uovo"></div>
 
     <div>Lattuga<input class="ingrediente" type="checkbox" name="lattuga" id="" value="lattuga"></div>
 
@@ -42,9 +42,11 @@ Quando tutto funziona passate alla parte visiva lavorando al css.-->
 
     <!--DISCOUNT SECTION-->
 
-    <div>Discount <input type="text"></div> <!--Discount variabile-->
+    <div class="sconto">Discount <input class="" type="text" id="nome-coupon" value=""></div> <!--Discount variabile-->
 
     <button id="bottone-calcolatore">Calcolatore</button>  <!--Bottone che calcola il prezzo del panino tenendo conto degli ingredienti checkati e del discount eventuale-->
+
+    <div id="prezzo-finale"></div>
 
     <script type="text/javascript" src="javascript/myscript.js"></script>
 </body>
